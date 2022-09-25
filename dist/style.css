@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #053351;
+  color: white;
+}
+body #app {
+  background-color: #053351;
+  width: 100%;
+  height: 100%;
+  font-family: "poppins", open-sans;
+}
+body #app #app-background {
+  text-align: center;
+}
+body #app #app-background h1 {
+  position: relative;
+  margin-top: 8%;
+  font-size: 4rem;
+}
+body #app #app-background #session-controls {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+body #app #app-background #break-controls {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+body #app #app-background #time-length-controls {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+body #app #app-background #session-label, body #app #app-background #break-label {
+  margin-top: 10px auto;
+}
+body #app #app-background #break-length, body #app #app-background #session-length {
+  font-size: 1.7rem !important;
+}
+body #app #app-background #timer-label, body #app #app-background #break-label, body #app #app-background #session-label {
+  font-size: 1.8rem;
+  color: white;
+}
+body #app #app-background #timer-container {
+  border: 4px solid white;
+  display: block;
+  width: 230px;
+  margin: 10px auto;
+  border-radius: 40px;
+}
+body #app #app-background #timer-container #time-left {
+  font-size: 4rem;
+  color: white;
+}
+body #app #app-background #timer-container #start-stop {
+  display: block;
+}
+body #app #app-background button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin: 0 10px;
+  font-size: 1.7rem;
+}
+body #app #app-background .arrows {
+  margin: 0 20px;
+}
+body #app #app-background .fa:hover {
+  color: darkorange;
+}
+body #app #app-background #attribution {
+  background-color: black;
+  position: relative;
+  bottom: -140px;
+  padding: 40px auto;
+  text-align: center;
+}
+body #app #app-background #attribution > a {
+  color: purple;
+}
+body #app #app-background #developer {
+  text-align: center;
+  color: darkorange;
+  font-family: "Roboto", sans-serif;
+  margin: 20px auto;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  #break-label, #session-label {
+    font-size: 1.5rem !important;
+  }
+  #break-container, #session-container {
+    margin: 10px auto !important;
+  }
+}
+@media (min-width: 800px) {
+  #attribution {
+    background-color: black;
+    position: relative;
+    bottom: -100px !important;
+    padding: 40px auto;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+$bg : darken(#0d8ee2,30%);
+$bg-accent: lighten($bg,10%);
+$font-family: "poppins",open-sans;
+$text-color: white;
+$text-accent: lightgray;
+
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color:$bg;
+  color: $text-color;
+
+#app {
+  background-color: $bg;
+  width: 100%;
+  height: 100%;
+  font-family: $font-family;
+
+
+#app-background {
+  text-align: center;
+
+h1 {
+  position: relative;
+  margin-top: 8%;
+  font-size: 4rem;
+  
+}
+
+#session-controls {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#break-controls {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  
+}
+
+#time-length-controls {
+  display: flex;
+  justify-content: space-evenly;  
+  flex-wrap: wrap;
+  
+}
+
+
+#session-label, #break-label {
+  margin-top: 10px auto;
+}
+
+#break-length, #session-length {
+  font-size: 1.7rem !important;
+}
+  
+#timer-label, #break-label, #session-label {
+  font-size: 1.8rem;
+  color: $text-color;
+  
+}
+
+
+#timer-container {
+  border: 4px solid $text-color;
+  display: block;
+  width: 230px;
+  margin: 10px auto;
+  border-radius: 40px;
+
+
+#time-left {
+  font-size: 4rem;
+  color: $text-color;
+}
+
+#start-stop {
+  display: block;
+}
+  }
+
+button {
+  background-color: transparent;
+  border: none;
+  color: $text-color;
+  margin: 0 10px;
+  font-size: 1.7rem;
+}
+  
+.arrows {
+  margin: 0 20px;
+}
+
+  
+.fa:hover {
+  color: darkorange;
+}
+
+
+#attribution {
+  background-color: black;
+  position: relative;
+  bottom: -140px;
+  padding: 40px auto;
+  text-align: center;
+}
+#attribution>a {
+  color: purple;
+}
+  
+#developer {
+  text-align: center;
+  color: darkorange;
+  font-family: 'Roboto', sans-serif;
+  margin: 20px auto;
+}
+  
+}
+  
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  #break-label, #session-label {
+    font-size: 1.5rem !important;
+  }
+  
+  #break-container, #session-container {
+    margin: 10px auto !important;
+  }
+}
+  
+
+@media (min-width: 800px)  {
+  #attribution {
+  background-color: black;
+  position: relative;
+  bottom: -100px !important;
+  padding: 40px auto;
+  text-align: center;
+}
+}
